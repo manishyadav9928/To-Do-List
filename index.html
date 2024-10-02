@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+    <h1>ToDo List</h1>
+    <div class="inputs">
+        <input type="text" placeholder="Enter Your Task" id="inp">
+        <button onclick="Add()">Add</button>
+    </div>
+    <div class="text">
+        <ul id="taskList"></ul>
+    </div>
+   </div>
+
+   <!-- Delete Confirmation Modal -->
+   <div id="deleteModal" class="modal">
+      <div class="modal-content">
+        <p>Are you sure you want to delete this task?</p>
+        <button onclick="confirmDelete()" class="confirm">Confirm</button>
+        <button onclick="cancelDelete()" class="cancel">Cancel</button>
+      </div>
+   </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
